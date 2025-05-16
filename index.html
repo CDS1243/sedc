@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>SEDC</title>
+    <meta name="keywords" content="South East Development Commission" />
+    <meta name="description" content="South East Development Commission" />
+    <meta name="author" content="Information Technology Department SEDC" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="App_Themes/assets/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no" />
+
+    <!-- Web Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light%7CPlayfair+Display:400" rel="stylesheet" type="text/css" />
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css" />
+    <link rel="stylesheet" href="vendor/animate/animate.min.css" />
+    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.min.css" />
+    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.min.css" />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme-elements.css" />
+    <link rel="stylesheet" href="css/theme-blog.css" />
+    <link rel="stylesheet" href="css/theme-shop.css" />
+
+    <!-- Current Page CSS -->
+    <link rel="stylesheet" href="vendor/rs-plugin/css/settings.css" />
+    <link rel="stylesheet" href="vendor/rs-plugin/css/layers.css" />
+    <link rel="stylesheet" href="vendor/rs-plugin/css/navigation.css" />
+
+    <!-- Skin CSS -->
+    <link rel="stylesheet" href="css/skins/default.css" />
+    <script src="master/style-switcher/style.switcher.localstorage.js"></script>
+
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css" />
+</head>
+<body class="loading-overlay-showing" data-plugin-page-transition data-loading-overlay data-plugin-options="{'hideDelay': 500}">
+    <div class="loading-overlay">
+        <div class="bounce-loader">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <form method="post" action="https://nddctenders-ng.com/" id="form1">
+        <div class="aspNetHidden">
+            <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+            <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTQxMjE1MDIxNQ9kFgJmD2QWAgIDD2QWBAIDDxYCHgtfIUl0ZW1Db3VudAIBFgJmD2QWAmYPFQMXbmV3c2RldGFpbHMuYXNweD9uaWQ9MzgyU0VEQyBDb21tZW5kcyBQbGFucyBmb3IgU2tpbGwgQWNxdWlzaXRpb24gQ2VudHJlIGkXbmV3c2RldGFpbHMuYXNweD9uaWQ9MzhkAgUPZBYCAgEPZBYWAgMPFgIfAAIFFgpmD2QWBgIBDw8WAh4ISW1hZ2VVcmwFf2h0dHBzOi8vYjhiN2UzZTU0OTdjYTFhNzk5MDEtZDRlODliMjg2MzE5MTVlMDRlZGVhZGI5Zjk5MTk1ZjUuc3NsLmNmMi5yYWNrY2RuLmNvbS9OZXdzLzU2MDg0MkluYXVndXJhdGlvbiBvZiBJRkFEIENvbW1pdHRlZS5qcGdkZAIDDw8WAh4EVGV4dAU9U0VEQyBJbmF1Z3VyYXRlcyBUZWNobmljYWwgQ29tbWl0dGVlIGZvciBJRkFEIEFncmljIFByb2dyYW1tZWRkAgQPFQEXbmV3c2RldGFpbHMuYXNweD9uaWQ9MzVkAgEPZBYGAgEPDxYCHwEFhQFodHRwczovL2I4YjdlM2U1NDk3Y2ExYTc5OTAxLWQ0ZTg5YjI4NjMxOTE1ZTA0ZWRlYWRiOWY5OTE5NWY1LnNzbC5jZjIucmFja2Nkbi5jb20vU2xpZGVyLzE4NDkzMDExMC0xNjAyNTkyOTMwLXNvdXRoLWVhc3QtbGVhZGVycy5qcGdkZAIDDw8WAh4EVGV4dAVCU0VEQyBMRUFERVJTIEJBQ0sgRk9SRU5TSUMgQVVESVRkZAIEDxUBF25ld3NkZXRhaWxzLmFzcHg/bmlkPTI5ZAICD2QWBgIBDw8WAh8BBXRodHRwczovL2I4YjdlM2U1NDk3Y2ExYTc5OTAxLWQ0ZTg5YjI4NjMxOTE1ZTA0ZWRlYWRiOWY5OTE5NWY1LnNzbC5jZjIucmFja2Nkbi5jb20vTmV3cy8xMTc5NTZJTUdfMjAyMDA3MTBfMTExODA0LmpwZ2RkAgMPDxYCHwIFS1BSRVNTIFNUQVRFTUVOVDogV0UgRElTT1dOIFVLIFBSSVZBVEUgQUNDT1VOVCBGT1IgUkVNSVRUQU5DRSBPRiAzJSBMRVZZIEJZIGRkAgQPFQEXbmV3c2RldGFpbHMuYXNweD9uaWQ9MjZkAgMPZBYGAgEPDxYCHwEFiQFodHRwczovL2I4YjdlM2U1NDk3Y2ExYTc5OTAxLWQ0ZTg5YjI4NjMxOTE1ZTA0ZWRlYWRiOWY5OTE5NWY1LnNzbC5jZjIucmFja2Nkbi5jb20vU2xpZGVyLzI2MzYxODEwNy0xNjAxMjI1ODIyLXNlbmF0b3ItYWtwYWJpby1hdC1zZWRjLmpwZ2RkAgMPDxYCHwIFQFNFRGMgTkVFRFMgTkVXIE1BU1RFUiBQTEFOIEZPUiBTT1VUSCBFQVNUIERFVkVMT1BNRU5UIC0gQUtQQUJPT2RkAgQPFQEXbmV3c2RldGFpbHMuYXNweD9uaWQ9MjVkAgQPDxYCHwEFiQFodHRwczovL2I4YjdlM2U1NDk3Y2ExYTc5OTAxLWQ0ZTg5YjI4NjMxOTE1ZTA0ZWRlYWRiOWY5OTE5NWY1LnNzbC5jZjIucmFja2Nkbi5jb20vU2xpZGVyLzQ2NzQ4MzEwNS0xNjAxMDI5MDY1LW5hdmFsLWNvbW1hbmRhbnQtYXQtc2VkYy5qcGdkZAIDDw8WAh4EVGV4dAU5U0VEQ+KAmVMgSU1QQUNUIEhFTFBTIFRPIENVUkIgUElQRUxJTkUgVkFOREFMSVNNIC0gUE9OREVJZGQCBA8VARduZXdzZGV0YWlscy5hc3B4P25pZD0yN2QCCQ8PFgIeB1Zpc2libGVnZBYCAgEPFgIfAAIBFgJmD2QWBAIBDw8WAh8CBSxDb250cmFjdCBGaWxlcyBUYWtlb3ZlciBieSBGb3JlbnNpYyBBdWRpdG9yc2RkAgIPFQKWAUFzIHBhcnQgb2YgdGhlIG9uLWdvaW5nIEZvcmVuc2ljIEF1ZGl0IG9mIHRoZSBTb3V0aCBFYXN0IERldmVsb3BtZW50IENvbW1pc3Npb24sIFNFREMsIHRoZSBsZWFkIGNvbnN1bHRhbnRzLCBPbHVtdXlpd2EgQmFzaXJ1ICYgQ28uIHdpbGwgdG9tb3Jyb3cgKFRoZGQCCw8PFgIfA2hkZAINDxYCHwACBBYIZg9kFhBmDxUBF25ld3NkZXRhaWxzLmFzcHg/bmlkPTM0ZAIBDw8WAh8BBYUBaHR0cHM6Ly9iOGI3ZTNlNTQ5N2NhMWE3OTkwMS1kNGU4OWIyODYzMTkxNWUwNGVkZWFkYjlmOTkxOTVmNS5zc2wuY2YyLnJhY2tjZG4uY29tL05ld3MvMTY3NjAySGFuZG92ZXIgdG8gU0VEQyBGb3JlbnNpYyBBdWRpdG9ycyAxLmpwZ2RkAgMPDxYCHwIFAjE0ZGQCBQ8PFgIfAgUDTm92ZGQCBg8VARduZXdzZGV0YWlscy5hc3B4P25pZD0zNGQCBw8PFgIfAgUvU0VEQyBIYW5kcyBPdmVyIE1vcmUgVG9vbHMgdG8gRm9yZW5zaWMgQXVkaXRvcnNkZAIJDw8WAh8CBZgBVGhlIFNFREMgQWN0aW5nIE1hbmFnaW5nIERpcmVjdG9yLCBQcm9mLiBLZW1lYnJhZGlrdW1vIFBvbmRlaSwgKG1pZGRsZSkgaGFuZGluZyBvdmVyIDEwIEhpbHV4IHZlaGljbGVzIGFuZCBmaXZlIGJ1c2VzLCB0byB0aGUgQ29tbWlzc2lvbuKAmXMgYXVkaXRvcnMgYXRkZAIKDxUBF25ld3NkZXRhaWxzLmFzcHg/bmlkPTM0ZAIBD2QWEGYPFQEXbmV3c2RldGFpbHMuYXNweD9uaWQ9MzNkAgEPDxYCHwEFdWh0dHBzOi8vYjhiN2UzZTU0OTdjYTFhNzk5MDEtZDRlODliMjg2MzE5MTVlMDRlZGVhZGI5Zjk5MTk1ZjUuc3NsLmNmMi5yYWNrY2RuLmNvbS9OZXdzLzM0ODgyNldlYnAubmV0LXJlc2l6ZWltYWdlLmpwZ2RkAgMPDxYCHwIFAjEyZGQCBQ8PFgIfAgUDTm92ZGQCBg8VARduZXdzZGV0YWlscy5hc3B4P25pZD0zM2QCBw8PFgIfAgUsQ29udHJhY3QgRmlsZXMgVGFrZW92ZXIgYnkgRm9yZW5zaWMgQXVkaXRvcnNkZAIJDw8WAh8CBZYBQXMgcGFydCBvZiB0aGUgb24tZ29pbmcgRm9yZW5zaWMgQXVkaXQgb2YgdGhlIFNvdXRoIEVhc3QgRGV2ZWxvcG1lbnQgQ29tbWlzc2lvbiwgU0VEQywgdGhlIGxlYWQgY29uc3VsdGFudHMsIE9sdW11eWl3YSBCYXNpcnUgJiBDby4gd2lsbCB0b21vcnJvdyAoVGhkZAICD2QWEGYPFQEXbmV3c2RldGFpbHMuYXNweD9uaWQ9MzJkAgEPDxYCHwEFaWh0dHBzOi8vYjhiN2UzZTU0OTdjYTFhNzk5MDEtZDRlODliMjg2MzE5MTVlMDRlZGVhZGI5Zjk5MTk1ZjUuc3NsLmNmMi5yYWNrY2RuLmNvbS9OZXdzLzk2NzI1M0RyIE9qb3VnYm9oIFZpc2l0cyBDb3ZlbnRyeSBVbml2ZXJzaXR5LmpwZ2RkAgMPDxYCHwIFAjMwZGQCBQ8PFgIfAgUDT2N0ZGQCBg8VARduZXdzZGV0YWlscy5hc3B4P25pZD0zMmQCBw8PFgIfAgUySHVyZGxlcyBDbGVhcmVkIGZvciBQYXltZW50IG9mIE91dHN0YW5kaW5nIFNjaG9sYXJkZAINDxYCHwIFYjxoMyBjbGFzcz0iZm9udC13ZWlnaHQtZXh0cmEtYm9sZCB0ZXh0LTE0IGxpbmUtaGVpZ2h0LTEgbWItMiIgZGF0YS10bz0xMDUxOSBkYXRhLWFwcGVuZD0iKyI+MDwvaDM+ZAIXDxYCHwIFpwc8Y2FudmFzIGlkPSJteUNoYXJ0IiB3aWR0aCA9IjQwMCIgaGVpZ2h0PSIyNTAiPjwvY2FudmFzPjxzY3JpcHQ+dmFyIGN0eCA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdteUNoYXJ0JykuZ2V0Q29udGV4dCgnMmQnKTt2YXIgbXlDaGFydCA9IG5ldyBDaGFydChjdHgsIHt0eXBlOiAnYmFyJyxkYXRhOiB7bGFiZWxzOiBbJ0FiaWEnLCAnQWt3YSBJYm9tJywgJ0JheWVsc2EnLCAnQ3Jvc3MgUml2ZXJzJywgJ0RlbHRhJywgJ0VkbycsICdJbW8nLCAnT25kbycsICdSaXZlcnMnXSxkYXRhc2V0czogW3tsYWJlbDogJyMgb2YgUHJvamVjdHMnLGRhdGE6IFs3MDksIDE0MjgsIDg4NCwgNTkyLCAxNzAxLCA5NzcsIDc1NSwgODQxLCAyNTY5XSxiYWNrZ3JvdW5kQ29sb3I6IFsncmdiYSg1NCwgMTYyLCAyMzUsIDAuMiknLCdyZ2JhKDU0LCAxNjIsIDIzNSwgMC4yKScsJ3JnYmEoNTQsIDE2MiwgMjM1LCAwLjIpJywncmdiYSg1NCwgMTYyLCAyMzUsIDAuMiknLCdyZ2JhKDU0LCAxNjIsIDIzNSwgMC4yKScsJ3JnYmEoNTQsIDE2MiwgMjM1LCAwLjIpJywncmdiYSg1NCwgMTYyLCAyMzUsIDAuMiknLCdyZ2JhKDU0LCAxNjIsIDIzNSwgMC4yKScsJ3JnYmEoNTQsIDE2MiwgMjM1LCAwLjIpJ10sYm9yZGVyQ29sb3I6IFsncmdiYSg1NCwgMTYyLCAyMzUsIDEpJywncmdiYSg1NCwgMTYyLCAyMzUsIDEpJywncmdiYSg5kFhBmDxUBF25ld3NkZXRhaWxzLmFzcHg/bmlkPTM4ZAIBDw8WAh8BBYUBaHR0cHM6Ly9iOGI3ZTNlNTQ5N2NhMWE3OTkwMS1kNGU4OWIyODYzMTkxNWUwNGVkZWFkYjlmOTkxOTVmNS5zc2wuY2YyLnJhY2tjZG4uY29tL05ld3MvMTg0OTk2RXRjaGUgQW1lcmljYSBGb3VuZGF0aW9uIGF0IE5EREMuanBnZGQCAw8PFgIfAgUVMTIvMy8yMDIwIDEyOjAwOjAwIEFNZGQCBA8VARduZXdzZGV0YWlscy5hc3B4P25pZD0zOGQCBQ8PFgIfAgUyU0VEQyBDb21tZW5kcyBQbGFucyBmb3IgU2tpbGwgQWNxdWlzaXRpb24gQ2VudHJlIGkXbmV3c2RldGFpbHMuYXNweD9uaWQ9MzhkAgUPDxYCHwIFMlNFREMgQ29tbWVuZHMgUGxhbnMgZm9yIFNraWxsIEFjcXVpc2l0aW9uIENlbnRyZSBpZGQCBw8PFgIfAgWWAUwtUjogVGhlIFNFREMgQWN0aW5nIEV4ZWN1dGl2ZSBEaXJlY3RvciwgRmluYW5jZSBhbmQgQWRtaW5pc3RyYXRpb24sIE1yLiBFZmZpb25nIEFrd2EsIHRoZSBTRURDIEFjdGluZyBNYW5hZ2luZyBEaXJlY3RvciwgUHJvZmVzc29yIEtlbWVicmFkaWt1bW8gUG9uZGRkAggPFQEXbmV3c2RldGFpbHMuYXNweD9uaWQ9MzhkAgEPZBYOZg8VARduZXdzZGV0YWlscy5hc3B4P25pZD0zNWQCAQ8PFgIfAQV/aHR0cHM6Ly9iOGI3ZTNlNTQ5N2NhMWE3OTkwMS1kNGU4OWIyODYzMTkxNWUwNGVkZWFkYjlmOTkxOTVmNS5zc2wuY2YyLnJhY2tjZG4uY29tL05ld3MvNTYwODQySW5hdWd1cmF0aW9uIG9mIElGQUQgQ29tbWl0dGVlLmpwZ2RkAgMPDxYCHwIFFTEyLzMvMjAyMCAxMjowMDowMCBBTWRkAgQPFQEXbmV3c2RldGFpbHMuYXNweD9uaWQ9MzVkAgUPDxYCHwIFMlNFREMgSW5hdWd1cmF0ZXMgVGVjaG5pY2FsIENvbW1pdHRlZSBmb3IgSUZBRCBBZ3JpZGQCBw8PFgIfAgWWAUwtUjogVGhlIE5hdGlvbmFsIFByb2plY3QgQ29vcmRpbmF0b3IgZm9yIExJRkUtTkQgcHJvZ3JhbW1lLCBFbmdyLkFiaW9kdW4gU2Fubmk7IHRoZSBTRURDIEFjdGluZyBNYW5hZ2luZyBEaXJlY3RvciwgUHJvZi4gS2VtZWJyYWRpa3VtbyBQb25kZWksIHRoZSBEaWRkAggPFQEXbmV3c2RldGFpbHMuYXNweD9uaWQ9MzVkAgIPZBYOZg8VARduZXdzZGV0YWlscy5hc3B4P25pZD0zNmQCAQ8PFgIfAQV4aHR0cHM6Ly9iOGI3ZTNlNTQ5N2NhMWE3OTkwMS1kNGU4OWIyODYzMTkxNWUwNGVkZWFkYjlmOTkxOTVmNS5zc2wuY2YyLnJhY2tjZG4uY29tL05ld3MvNjYwMzA4bmRkYy1yZWxpZWYtbWF0ZXJpYWxzMDk0LmpwZ2RkAgMPDxYCHwIFFTEyLzMvMjAyMCAxMjowMDowMCBBTWRkAgQPFQEXbmV3c2RldGFpbHMuYXNweD9uaWQ9MzZkAgUPDxYCHwIFMkNPVklELTE5OiBTRURDIERpc3RyaWJ1dGVzIE1lZGljYWwgYW5kIFJlbGllZiBNYXRlZGQCBw8PFgIfAgWWAUwtUjogQXMgcGFydHMgb2YgZWZmb3J0cyB0byBjb21iYXQgdGhlIHJhdmFnaW5nIENvcm9uYSBWaXJ1cyBwYW5kZW1pYyBhbmQgaXRzIGF0dGVuZGFudCBodW5nZXIsIHRoZSBTb3V0aCBFYXN0IERldmVsb3BtZW50IENvbW1pc3Npb24sIFNFREMsIGhhcyBraWNrZWQgb2ZmZGQCCA8VARduZXdzZGV0YWlscy5hc3B4P25pZD0zNmRkoI00qr4Y8PGUi+OkHDvI4epiq2A=" />
+        </div>
+
+        <script type="text/javascript">
+            var theForm = document.forms['form1'];
+            if (!theForm) {
+                theForm = document.form1;
+            }
+            function __doPostBack(eventTarget, eventArgument) {
+                if (!theForm.onsubmit || (typeof theForm.onsubmit === 'function' && theForm.onsubmit() !== false)) {
+                    theForm.__EVENTTARGET.value = eventTarget;
+                    theForm.__EVENTARGUMENT.value = eventArgument;
+                    theForm.submit();
+                }
+            }
+            function handlePostBack(target, argument) {
+                if (window.__cfRLUnblockHandlers) {
+                    __doPostBack(target, argument);
+                }
+            }
+        </script>
+
+        <div class="aspNetHidden">
+            <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+            <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAWKt9iBAFmwkZ6ikOcmPbiotCSykCIdfPoPgJSxjEW9IZDKkFkBxEQ3Bp77wruVhCkaA6RGz/HSdCCxpDvayPuqJM4+YeS3RrKok5/hsxYBAGsZchFBGKHyKd3H1vmbj95uyLX+" />
+        </div>
+
+        <div class="body">
+            <header id="header" class="header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyChangeLogo': true, 'stickyStartAt': 120, 'stickyHeaderContainerHeight': 70}">
+                <div class="header-body header-body-bottom-border border-top-0">
+                    <div class="header-top header-top-default border-bottom-0 bg-color-success" style="background-color:#2F713A">
+                        <div class="container">
+                            <div class="header-row py-2">
+                                <div class="header-column justify-content-start">
+                                    <div class="header-row">
+                                        <nav class="header-nav-top">
+                                            <ul class="nav nav-pills text-uppercase text-2">
+                                                <li class="nav-item nav-item-anim-icon d-none d-md-block"><a class="text-light opacity-7 pl-0" href='newsdetails036c.html?nid=38'><span class="badge badge-danger text-3">Breaking News</span> SEDC Commends Plans for Skill Acquisition Centre...</a></li>
+                                                <li class="nav-item nav-item-anim-icon d-none d-md-block"><a class="text-light opacity-7 pl-0" href='newsdetails036c.html?nid=38'>Learn More <i class="fas fa-angle-right"></i></a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                                <div class="header-column justify-content-end">
+                                    <div class="header-row">
+                                        <nav class="header-nav-top">
+                                            <ul class="nav nav-pills">
+                                                <li class="nav-item">
+                                                    <a href="mailto:info@nddctenders-ng.com" class="text-light opacity-7 pl-0"><i class="icon-envelope icons text-4 text-color-primary" style="top: 1px;"></i> info@nddctenders-ng.com</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="tel:+2348191941731" class="text-light opacity-7 pl-0"><i class="fab fa-whatsapp text-4 text-color-primary" style="top: 0;"></i> +2348191941731</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-container container">
+                        <div class="header-row">
+                            <div class="header-column">
+                                <div class="header-row">
+                                    <div class="header-logo" style="width: 250px; height: 60px">
+                                        <a href="default.html">
+                                            <img alt="South East Development Commission Logo" width="250" height="60" src="img/nddclogo.png">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-column justify-content-end">
+                                <div class="header-row">
+                                    <div class="header-nav header-nav-links order-2 order-lg-1">
+                                        <div class="header-nav-main header-nav-main-square header-nav-main-effect-2 header-nav-main-sub-effect-1">
+                                            <nav class="collapse">
+                                                <ul class="nav nav-pills" id="mainNav">
+                                                    <li class="dropdown"><a class="dropdown-item dropdown-toggle active" href="index.html" aria-label="Home">Home</a></li>
+                                                    <li class="dropdown"><a class="dropdown-item dropdown-toggle active" href="#" aria-label="Who We Are">WHO WE ARE</a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="mission.html">Our Vision & Mission</a></li>
+                                                            <li><a class="dropdown-item" href="masterplan.html">Our Master Plan</a></li>
+                                                            <li><a class="dropdown-item" href="executive.html">Our Executive Management</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="dropdown"><a class="dropdown-item dropdown-toggle active" href="#" aria-label="Tenders">TENDERS</a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="procedure.html">Tender Procedure</a></li>
+                                                            <li><a class="dropdown-item" href="requirements.html">Tender Requirements</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="dropdown"><a class="dropdown-item dropdown-toggle active" href="confirmation.html" aria-label="Confirmation">CONFIRMATION</a></li>
+                                                    <li class="dropdown"><a class="dropdown-item dropdown-toggle active" href="contact.html" aria-label="Contact Us">CONTACT US</a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                        <ul class="header-social-icons social-icons d-none d-sm-block">
+                                            <li class="social-icons-facebook"><a href="https://www.facebook.com/NDDC" target="_blank" title="Facebook" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li class="social-icons-twitter"><a href="https://www.twitter.com/NDDC" target="_blank" title="Twitter" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
+                                        </ul>
+                                        <div class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main nav">
+                                            <i class="fas fa-bars"></i>
+                                        </div>
+                                    </div>
+                                    <div class="header-nav-features header-nav-features-no-border header-nav-features-lg-show-border order-1 order-lg-2">
+                                        <div class="header-nav-feature header-nav-features-search d-inline-flex">
+                                            <a href="#" class="header-nav-features-toggle" data-focus="headerSearch" aria-label="Search"><i class="fas fa-search header-nav-top-icon"></i></a>
+                                            <div class="header-nav-features-dropdown" id="headerTopSearchDropdown">
+                                                <form role="search" action="https://portotheme.com/html/porto/8.0.0/page-search-results.html" method="get">
+                                                    <div class="simple-search input-group">
+                                                        <input class="form-control text-1" id="headerSearch" name="q" type="search" value="" placeholder="Search..." aria-label="Search">
+                                                        <span class="input-group-append">
+                                                            <button class="btn" type="submit" aria-label="Submit Search"><i class="fa fa-search header-nav-top-icon"></i></button>
+                                                        </span>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div id="ContentPlaceHolder1_pnlHome" onKeyPress="javascript:return WebForm_FireDefaultButton(event, 'ContentPlaceHolder1_LBSearch')">
+                <div role="main" class="main">
+                    <div class="slider-container rev_slider_wrapper" style="height: 600px;">
+                        <div id="revolutionSlider" class="slider rev_slider" data-version="5.4.8" data-plugin-revolution-slider data-plugin-options="{'delay': 5000, 'gridwidth': 1170, 'gridheight': 400, 'disableProgressBar': 'on', 'responsiveLevels': [4096,1200,992,500], 'parallax': { 'type': 'scroll', 'origo': 'enterpoint', 'speed': 1000, 'levels': [2,3,4,5,6,7,8,9,12,50], 'disable_onmobile': 'off' }, 'navigation' : {'arrows': { 'enable': true }, 'bullets': {'enable': true, 'style': 'bullets-style-1', 'h_align': 'center', 'v_align': 'bottom', 'space': 7, 'v_offset': 70, 'h_offset': 0}}}">
+                            <ul>
+                                <li class="slide-overlay slide-overlay-level-4" data-transition="fade">
+                                    <img id="ContentPlaceHolder1_Repeater1_Image1_0" data-bgposition="center center" data-bgrepeat="no-repeat" class="rev-slidebg" src="../b8b7e3e5497ca1a79901-d4e89b28631915e04edeadb9f99195f5.ssl.cf2.rackcdn.com/News/560842Inauguration%20of%20IFAD%20Committee.jpg" alt="Inauguration of IFAD Committee by SEDC" style="max-height: 350px; width: 100%; object-fit: cover;" />
+                                    <div class="tp-caption text-color-light font-weight-normal" data-x="center" data-y="center" data-voffset="['-50','-50','-50','-75']" data-start="700" data-fontsize="['22','22','22','40']" data-lineheight="['25','25','25','45']" data-transform_in="y:[-50%];opacity:0;s:500;">
+                                        <b><span id="ContentPlaceHolder1_Repeater1_Label3_0">SEDC Inaugurates Technical Committee for IFAD Agric Programme</span></b>
+                                    </div>
+                                    <h1 class="tp-caption font-weight-extra-bold text-color-light negative-ls-2" data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:1.5;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]' data-x="center" data-y="center" data-fontsize="['50','50','50','90']" data-lineheight="['55','55','55','95']">SEDC</h1>
+                                    <div class="tp-caption text-light font-weight-light" data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":2000,"split":"chars","splitdelay":0.05,"ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]' data-x="center" data-y="center" data-voffset="['40','40','40','80']" data-fontsize="['18','18','18','50']" data-lineheight="['20','20','20','55']">
+                                        <br /><a href='newsdetailsddf1.html?nid=35' class="btn btn-xs btn-light text-1 text-uppercase">More <i class="fas fa-long-arrow-alt-right ml-2 text-4 mb-0"></i></a>
+                                    </div>
+                                </li>
+                                <li class="slide-overlay slide-overlay-level-4" data-transition="fade">
+                                    <img id="ContentPlaceHolder1_Repeater1_Image1_1" data-bgposition="center center" data-bgrepeat="no-repeat" class="rev-slidebg" src="../b8b7e3e5497ca1a79901-d4e89b28631915e04edeadb9f99195f5.ssl.cf2.rackcdn.com/Slider/184930110-1602592930-south-east-leaders.jpg" alt="South East Leaders Support SEDC" style="max-height: 350px; width: 100%; object-fit: cover;" />
+                                    <div class="tp-caption text-color-light font-weight-normal" data-x="center" data-y="center" data-voffset="['-50','-50','-50','-75']" data-start="700" data-fontsize="['22','22','22','40']" data-lineheight="['25','25','25','45']" data-transform_in="y:[-50%];opacity:0;s:500;">
+                                        <b><span id="ContentPlaceHolder1_Repeater1_Label3_1">SOUTH EAST LEADERS LAUD SEDC, BACK FORENSIC AUDIT</span></b>
+                                    </div>
+                                    <h1 class="tp-caption font-weight-extra-bold text-color-light negative-ls-2" data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:1.5;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]' data-x="center" data-y="center" data-fontsize="['50','50','50','90']" data-lineheight="['55','55','55','95']">SEDC</h1>
+                                    <div class="tp-caption text-light font-weight-light" data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":2000,"split":"chars","splitdelay":0.05,"ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]' data-x="center" data-y="center" data-voffset="['40','40','40','80']" data-fontsize="['18','18','18','50']" data-lineheight="['20','20','20','55']">
+                                        <br /><a href='newsdetails9dd9.html?nid=29' class="btn btn-xs btn-light text-1 text-uppercase">More <i class="fas fa-long-arrow-alt-right ml-2 text-4 mb-0"></i></a>
+                                    </div>
+                                </li>
+                                <li class="slide-overlay slide-overlay-level-4" data-transition="fade">
+                                    <img id="ContentPlaceHolder1_Repeater1_Image1_2" data-bgposition="center center" data-bgrepeat="no-repeat" class="rev-slidebg" src="../b8b7e3e5497ca1a79901-d4e89b28631915e04edeadb9f99195f5.ssl.cf2.rackcdn.com/News/117956IMG_20230710_111804.jpg" alt="SEDC Press Statement on UK Account" style="max-height: 350px; width: 100%; object-fit: cover;" />
+                                    <div class="tp-caption text-color-light font-weight-normal" data-x="center" data-y="center" data-voffset="['-50','-50','-50','-75']" data-start="700" data-fontsize="['22','22','22','40']" data-lineheight="['25','25','25','45']" data-transform_in="y:[-50%];opacity:0;s:500;">
+                                        <b><span id="ContentPlaceHolder1_Repeater1_Label3_2">PRESS STATEMENT: WE DISOWN UK PRIVATE ACCOUNT FOR REMITTANCE OF 3% LEVY BY</span></b>
+                                    </div>
+                                    <h1 class="tp-caption font-weight-extra-bold text-color-light negative-ls-2" data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:1.5;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]' data-x="center" data-y="center" data-fontsize="['50','50','50','90']" data-lineheight="['55','55','55','95']">SEDC</h1>
+                                    <div class="tp-caption text-light font-weight-light" data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":2000,"split":"chars","splitdelay":0.05,"ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]' data-x="center" data-y="center" data-voffset="['40','40','40','80']" data-fontsize="['18','18','18','50']" data-lineheight="['20','20','20','55']">
+                                        <br /><a href='newsdetailsa5be.html?nid=26' class="btn btn-xs btn-light text-1 text-uppercase">More <i class="fas fa-long-arrow-alt-right ml-2 text-4 mb-0"></i></a>
+                                    </div>
+                                </li>
+                                <li class="slide-overlay slide-overlay-level-4" data-transition="fade">
+                                    <img id="ContentPlaceHolder1_Repeater1_Image1_3" data-bgposition="center center" data-bgrepeat="no-repeat" class="rev-slidebg" src="../b8b7e3e5497ca1a79901-d4e89b28631915e04edeadb9f99195f5.ssl.cf2.rackcdn.com/Slider/263618107-1601225822-senator-akpabio-at-sedc.jpg" alt="Senator Akpabio at SEDC" style="max-height: 350px; width: 100%; object-fit: cover;" />
+                                    <div class="tp-caption text-color-light font-weight-normal" data-x="center" data-y="center" data-voffset="['-50','-50','-50','-75']" data-start="700" data-fontsize="['22','22','22','40']" data-lineheight="['25','25','25','45']" data-transform_in="y:[-50%];opacity:0;s:500;">
+                                        <b><span id="ContentPlaceHolder1_Repeater1_Label3_3">SEDC NEEDS NEW MASTER PLAN FOR SOUTH EAST DEVELOPMENT - AKPABIO</span></b>
+                                    </div>
+                                    <h1 class="tp-caption font-weight-extra-bold text-color-light negative-ls-2" data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:1.5;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]' data-x="center" data-y="center" data-fontsize="['50','50','50','90']" data-lineheight="['55','55','55','95']">SEDC</h1>
+                                    <div class="tp-caption text-light font-weight-light" data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":2000,"split":"chars","splitdelay":0.05,"ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]' data-x="center" data-y="center" data-voffset="['40','40','40','80']" data-fontsize="['18','18','18','50']" data-lineheight="['20','20','20','55']">
+                                        <br /><a href='newsdetails3373.html?nid=25' class="btn btn-xs btn-light text-1 text-uppercase">More <i class="fas fa-long-arrow-alt-right ml-2 text-4 mb-0"></i></a>
+                                    </div>
+                                </li>
+                                <li class="slide-overlay slide-overlay-level-4" data-transition="fade">
+                                    <img id="ContentPlaceHolder1_Repeater1_Image1_4" data-bgposition="center center" data-bgrepeat="no-repeat" class="rev-slidebg" src="../b8b7e3e5497ca1a79901-d4e89b28631915e04edeadb9f99195f5.ssl.cf2.rackcdn.com/Slider/467483105-1601029065-naval-commandant-at-sedc.jpg" alt="Naval Commandant at SEDC" style="max-height: 350px; width: 100%; object-fit: cover;" />
+                                    <div class="tp-caption text-color-light font-weight-normal" data-x="center" data-y="center" data-voffset="['-50','-50','-50','-75']" data-start="700" data-fontsize="['22','22','22','40']" data-lineheight="['25','25','25','45']" data-transform_in="y:[-50%];opacity:0;s:500;">
+                                        <b><span id="ContentPlaceHolder1_Repeater1_Label3_4">SEDC’S IMPACT HELPS TO CURB PIPELINE VANDALISM - PONDEI</span></b>
+                                    </div>
+                                    <h1 class="tp-caption font-weight-extra-bold text-color-light negative-ls-2" data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:1.5;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]' data-x="center" data-y="center" data-fontsize="['50','50','50','90']" data-lineheight="['55','55','55','95']">SEDC</h1>
+                                    <div class="tp-caption text-light font-weight-light" data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":2000,"split":"chars","splitdelay":0.05,"ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]' data-x="center" data-y="center" data-voffset="['40','40','40','80']" data-fontsize="['18','18','18','50']" data-lineheight="['20','20','20','55']">
+                                        <br /><a href='newsdetails9648.html?nid=27' class="btn btn-xs btn-light text-1 text-uppercase">More <i class="fas fa-long-arrow-alt-right ml-2 text-4 mb-0"></i></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="home-intro mb-0" id="home-intro2">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-8">
+                                    <p>
+                                        Keep up on our Latest News and Updates <span class="highlighted-word highlighted-word-animation-1 text-color-primary font-weight-semibold text-5">Stay Informed</span>
+                                        <span>Enter Your Email Address and Subscribe to our Mailing List.</span>
+                                    </p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="input-group mb-3">
+                                        <input name="ctl00$ContentPlaceHolder1$txtsub" type="text" id="ContentPlaceHolder1_txtsub" class="form-control" placeholder="Enter Email Address" aria-label="Email Address" />
+                                        <span class="input-group-append">
+                                            <a id="ContentPlaceHolder1_lbSubsc" class="btn btn-success" href="#" onclick="handlePostBack('ctl00$ContentPlaceHolder1$lbSubsc', '')">Go!</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="ContentPlaceHolder1_pnlPressStatement">
+                        <section class="call-to-action call-to-action-default with-button-arrow content-align-center call-to-action-in-header" style="background-color:white">
+                            <div class="container">
+                                <div class="call-to-action-content">
+                                    <h2 class="font-weight-normal mb-2">Press <span class="alternative-font-4 font-weight-bold">Statement</span></h2>
+                                </div>
+                                <div class="row justify-content-center pt-0 mt-0">
+                                    <div class="col-lg-9 text-center">
+                                        <div class="col-md-12 col-lg-12">
+                                            <div class="call-to-action-content">
+                                                <h2 class="font-weight-normal text-4 mb-0"><span id="ContentPlaceHolder1_Repeater4_Label3_0">Contract Files Takeover by Forensic Auditors</span></h2>
+                                                <p class="pb-3 mb-4">As part of the on-going Forensic Audit of the South East Development Commission, SEDC, the lead consultants, Olumuyiwa Basiru & Co. will tomorrow (Th...</p>
+                                                <a href='newsdetails80af.html?nid=33' target="_blank" class="btn btn-primary">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="divider divider-solid divider-style-4">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+
+                    <div class="container">
+                        <div class="col-lg-10 text-center offset-lg-1">
+                            <h2 class="font-weight-bold text-9 mb-0">Press Release</h2>
+                        </div>
+                        <br />
+                        <div class="row pb-5">
+                            <div class="col-lg-3 mb-3">
+                                <article class="post post-large pb-0">
+                                    <div class="post-image">
+                                        <a href='newsdetails3889.html?nid=34'>
+                                            <img id="ContentPlaceHolder1_Repeater2_Image1_0" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0 col-lg-12 mb-12" src="../b8b7e3e5497ca1a79901-d4e89b28631915e04edeadb9f99195f5.ssl.cf2.rackcdn.com/News/167602Handover%20to%20NDDC%20Forensic%20Auditors%201.jpg" alt="Handover to SEDC Forensic Auditors" style="max-height: 270px; width: 100%; object-fit: cover;" />
+                                        </a>
+                                    </div>
+                                    <div class="post-date">
+                                        <span class="day"><span id="ContentPlaceHolder1_Repeater2_Label2_0">14</span></span>
+                                        <span class="month"><span id="ContentPlaceHolder1_Repeater2_Label4_0">Nov</span></span>
+                                    </div>
+                                    <div class="post-content">
+                                        <h4><a href='newsdetails3889.html?nid=34' class="text-decoration-none"><span id="ContentPlaceHolder1_Repeater2_Label3_0">SEDC Hands Over More Tools to Forensic Auditors</span>...</a></h4>
+                                        <p class="mb-1"><span id="ContentPlaceHolder1_Repeater2_Label1_0">The SEDC Acting Managing Director, Prof. Kemebradikumo Pondei, (middle) handing over 10 Hilux vehicles and five buses, to the Commission’s auditors at</span>...</p>
+                                        <a href='newsdetails3889.html?nid=34' class="read-more text-color-dark font-weight-bold text-2">read more <i class="fas fa-chevron-right text-1 ml-1"></i></a>
+                                    </div>
+                                    <br />
+                                    <div class="post-block mt-0 post-share"></div>
+                                </article>
+                            </div>
+                            <div class="col-lg-3 mb-3">
+                                <article class="post post-large pb-0">
+                                    <div class="post-image">
+                                        <a href='newsdetails80af.html?nid=33'>
+                                            <img id="ContentPlaceHolder1_Repeater2_Image1_1" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0 col-lg-12 mb-12" src="../b8b7e3e5497ca1a79901-d4e89b28631915e04edeadb9f99195f5.ssl.cf2.rackcdn.com/News/348826Webp.net-resizeimage.jpg" alt="Contract Files Takeover by Forensic Auditors" style="max-height: 270px; width: 100%; object-fit: cover;" />
+                                        </a>
+                                    </div>
+                                    <div class="post-date">
+                                        <span class="day"><span id="ContentPlaceHolder1_Repeater2_Label2_1">12</span></span>
+                                        <span class="month"><span id="ContentPlaceHolder1_Repeater2_Label4_1">Nov</span></span>
+                                    </div>
+                                    <div class="post-content">
+                                        <h4><a href='newsdetails80af.html?nid=33' class="text-decoration-none"><span id="ContentPlaceHolder1_Repeater2_Label3_1">Contract Files Takeover by Forensic Auditors</span>...</a></h4>
+                                        <p class="mb-1"><span id="ContentPlaceHolder1_Repeater2_Label1_1">As part of the on-going Forensic Audit of the South East Development Commission, SEDC, the lead consultants, Olumuyiwa Basiru & Co. will tomorrow (Th</span>...</p>
+                                        <a href='newsdetails80af.html?nid=33' class="read-more text-color-dark font-weight-bold text-2">read more <i class="fas fa-chevron-right text-1 ml-1"></i></a>
+                                    </div>
+                                    <br />
+                                    <div class="post-block mt-0 post-share"></div>
+                                </article>
+                            </div>
+                            <div class="col-lg-3 mb-3">
+                                <article class="post post-large pb-0">
+                                    <div class="post-image">
+                                        <a href='newsdetails88f0.html?nid=32'>
+                                            <img id="ContentPlaceHolder1_Repeater2_Image1_2" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0 col-lg-12 mb-12" src="../b8b7e3e5497ca1a79901-d4e89b28631915e04edeadb9f99195f5.ssl.cf2.rackcdn.com/News/967253Dr%20Ojougboh%20Visits%20Coventry%20University.jpg" alt="Dr Ojougboh Visits Coventry University" style="max-height: 270px; width: 100%; object-fit: cover;" />
+                                        </a>
+                                    </div>
+                                    <div class="post-date">
+                                        <span class="day"><span id="ContentPlaceHolder1_Repeater2_Label2_2">30</span></span>
+                                        <span class="month"><span id="ContentPlaceHolder1_Repeater2_Label4_2">Oct</span></span>
+                                    </div>
+                                    <div class="post-content">
+                                        <h4><a href='newsdetails88f0.html?nid=32' class="text-decoration-none"><span id="ContentPlaceHolder1_Repeater2_Label3_2">Hurdles Cleared for Payment of Outstanding Scholar</span>...</a></h4>
+                                        <p class="mb-1"><span id="ContentPlaceHolder1_Repeater2_Label1_2">The Management of the South East Development Commission, SEDC, wishes to reassure the beneficiaries of its Foreign Post Graduate Scholarship programm</span>...</p>
+                                        <a href='newsdetails88f0.html?nid=32' class="read-more text-color-dark font-weight-bold text-2">read more <i class="fas fa-chevron-right text-1 ml-1"></i></a>
+                                    </div>
+                                    <br />
+                                    <div class="post-block mt-0 post-share"></div>
+                                </article>
+                            </div>
+                            <div class="col-lg-3 mb-3">
+                                <article class="post post-large pb-0">
+                                    <div class="post-image">
+                                        <a href='newsdetailsc224.html?nid=31'>
+                                            <img id="ContentPlaceHolder1_Repeater2_Image1_3" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0 col-lg-12 mb-12" src="../b8b7e3e5497ca1a79901-d4e89b28631915e04edeadb9f99195f5.ssl.cf2.rackcdn.com/News/944477filename.jpg" alt="Court Exposes Detractors of South East People" style="max-height: 270px; width: 100%; object-fit: cover;" />
+                                        </a>
+                                    </div>
+                                    <div class="post-date">
+                                        <span class="day"><span id="ContentPlaceHolder1_Repeater2_Label2_3">26</span></span>
+                                        <span class="month"><span id="ContentPlaceHolder1_Repeater2_Label4_3">Oct</span></span>
+                                    </div>
+                                    <div class="post-content">
+                                        <h4><a href='newsdetailsc224.html?nid=31' class="text-decoration-none"><span id="ContentPlaceHolder1_Repeater2_Label3_3">Court Exposes Detractors of South East People</span>...</a></h4>
+                                        <p class="mb-1"><span id="ContentPlaceHolder1_Repeater2_Label1_3">The recent decision of a Federal High Court sitting in Abuja to dismiss a suit seeking the sack of the Interim Management Committee, IMC, of the South East</span>...</p>
+                                        <a href='newsdetailsc224.html?nid=31' class="read-more text-color-dark font-weight-bold text-2">read more <i class="fas fa-chevron-right text-1 ml-1"></i></a>
+                                    </div>
+                                    <br />
+                                    <div class="post-block mt-0 post-share"></div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section class="section section-default section-with-divider mb-0">
+                        <div class="divider divider-solid divider-style-4">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="container pb-5" style="min-height: 0px;">
+                            <div class="row mb-3 pb-lg-0 counters">
+                                <div class="col-lg-10 text-center offset-lg-1">
+                                    <h2 class="font-weight-bold text-9 mb-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-duration="750" data-plugin-options="{'accY': -200}">Our Results</h2>
+                                    <p class="sub-title text-primary text-4 font-weight-semibold positive-ls-2 mt-2 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400" data-appear-animation-duration="750">Taking the South East To <span class="highlighted-word highlighted-word-animation-1 highlighted-word-animation-1-2 highlighted-word-animation-1 highlighted-word-animation-1-no-rotate alternative-font-4 font-weight-semibold line-height-2 pb-2">A NEW LEVEL</span></p>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 counter mb-5 mb-md-0">
+                                    <div class="appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="750" data-appear-animation-duration="750">
+                                        <h3 class="font-weight-extra-bold text-14 line-height-1 mb-2" data-to=10519 data-append="+">0</h3>
+                                        <label class="font-weight-semibold negative-ls-1 text-color-dark mb-0">Projects Delivered</label>
+                                        <p class="text-color-grey font-weight-semibold pb-1 mb-2">Since 2015 in All Regions</p>
+                                        <p class="mb-0"><a href="https://pmis.nddctenders-ng.com/" data-hash data-hash-offset="120" class="d-flex align-items-center justify-content-center text-4 font-weight-semibold text-decoration-none">View Details <i class="fas fa-long-arrow-alt-right ml-2 text-4 mb-0"></i></a></p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 counter divider-left-border">
+                                    <div class="appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="750" data-appear-animation-duration="750">
+                                        <h3 class="font-weight-extra-bold text-14 line-height-1 mb-2" data-to="60" data-append="%">0</h3>
+                                        <label class="font-weight-semibold negative-ls-1 text-color-dark mb-0">Capital Projects</label>
+                                        <p class="text-color-grey font-weight-semibold pb-1 mb-2">Covering Roads, Electricity and Water Supply</p>
+                                        <p class="mb-0"><a href="https://pmis.nddctenders-ng.com/" class="text-color-primary d-flex align-items-center justify-content-center text-4 font-weight-semibold text-decoration-none" target="_blank">Learn More <i class="fas fa-long-arrow-alt-right ml-2 text-4 mb-0"></i></a></p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 counter divider-left-border">
+                                    <div class="appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="750" data-appear-animation-duration="750">
+                                        <h3 class="font-weight-extra-bold text-14 line-height-1 mb-2" data-to="3000" data-append="+">0</h3>
+                                        <label class="font-weight-semibold negative-ls-1 text-color-dark mb-0">Rural Projects</label>
+                                        <p class="text-color-grey font-weight-semibold pb-1 mb-2">Including Rural Electrification and Water Projects</p>
+                                        <p class="mb-0"><a href="https://pmis.nddctenders-ng.com/" class="text-color-primary d-flex align-items-center justify-content-center text-4 font-weight-semibold text-decoration-none" target="_blank">View Details <i class="fas fa-long-arrow-alt-right ml-2 text-4 mb-0"></i></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <br /><br />
+
+                    <div class="col-lg-10 text-center offset-lg-1">
+                        <h2 class="font-weight-bold text-9 mb-0">Our Data</h2>
+                    </div>
+                    <div class="container pt-2">
+                        <div class="row my-0 pb-0">
+                            <div class="col-lg-6 pr-5 divider-right-border">
+                                <h2 class="font-weight-normal text-6 mb-2 pb-1">Projects <strong class="font-weight-extra-bold">Database</strong></h2>
+                                <p class="lead">SEDC has delivered thousands of projects across the 5 States of the South East Region. Gain deep insight and have unparalleled instant access to all our projects right here.</p>
+                                <div class="input-group mb-3">
+                                    <input name="ctl00$ContentPlaceHolder1$txtSearch" type="text" id="ContentPlaceHolder1_txtSearch" class="form-control" placeholder="Enter LGA, State, Community or Project" aria-label="Search Projects" />
+                                    <span class="input-group-append">
+                                        <a id="ContentPlaceHolder1_LBSearch" class="btn btn-success" href="#" onclick="handlePostBack('ctl00$ContentPlaceHolder1$LBSearch', '')"><i class="fas fa-search m-2"></i></a>
+                                    </span>
+                                </div>
+                                <a href="https://pmis.nddctenders-ng.com/" class="font-weight-semibold text-decoration-none learn-more text-2"><b>ALL Projects</b> <i class="fas fa-chevron-right ml-2"></i></a> <br />
+                                <a href="https://pmis.nddctenders-ng.com/stateprojects.aspx?sid=2" class="font-weight-semibold text-decoration-none learn-more text-2">By State <i class="divider-right-border ml-2"></i></a> 
+                                <a href="https://pmis.nddctenders-ng.com/category.aspx?pcid=4" class="font-weight-semibold text-decoration-none learn-more text-2">By Category <i class="divider-right-border ml-2"></i></a> 
+                                <a href="https://pmis.nddctenders-ng.com/category.aspx?pcid=4" class="font-weight-semibold text-decoration-none learn-more text-2">By Type <i class="divider-right-border ml-2"></i></a> <br /><br />
+                                <a href="https://pmis.nddctenders-ng.com/Default.aspx" class="font-weight-semibold text-decoration-none learn-more text-2">PMIS Projects Dashboard Analytics <i class="fas fa-chevron-right ml-2"></i></a>
+                            </div>
+                            <div class="col-lg-6">
+                                <canvas id="myChart" width="400" height="250" aria-label="Bar chart showing number of projects by state"></canvas>
+                                <script type="text/javascript">
+                                    var ctx = document.getElementById('myChart').getContext('2d');
+                                    var myChart = new Chart(ctx, {
+                                        type: 'bar',
+                                        data: {
+                                            labels: ['Abia', 'Anambra', 'Ebonyi', 'Enugu', 'Imo'],
+                                            datasets: [{
+                                                label: '# of Projects',
+                                                data: [709, 1428, 884, 592, 1701],
+                                                backgroundColor: ['rgba(54, 162, 235, 0.2)', 'rgba(54, 162, 235, 0.2)', 'rgba(54, 162, 235, 0.2)', 'rgba(54, 162, 235, 0.2)', 'rgba(54, 162, 235, 0.2)'],
+                                                borderColor: ['rgba(54, 162, 235, 1)', 'rgba(54, 162, 235, 1)', 'rgba(54, 162, 235, 1)', 'rgba(54, 162, 235, 1)', 'rgba(54, 162, 235, 1)'],
+                                                borderWidth: 1
+                                            }]
+                                        },
+                                        options: {
+                                            scales: {
+                                                yAxes: [{
+                                                    ticks: {
+                                                        beginAtZero: true
+                                                    }
+                                                }]
+                                            }
+                                        }
+                                    });
+                                </script>
+                            </div>
+                        </div>
+
+                        <br /><br />
+
+                        <div class="divider divider-solid divider-style-4">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+
+                        <div class="row py-1 my-1">
+                            <div class="col-md-6 order-2 order-md-1 text-center text-md-left">
+                                <div class="owl-carousel owl-theme nav-style-1 mb-0" data-plugin-options="{'responsive': {'576': {'items': 1}, '768': {'items': 1}, '992': {'items': 2}, '1200': {'items': 2}}, 'margin': 25, 'loop': true, 'nav': false, 'dots': false, 'autoplay': true, 'autoplayTimeout': 3000}">
+                                    <div>
+                                        <span class="thumb-info thumb-info-hide-wrapper-bg">
+                                            <span class="thumb-info-wrapper">
+                                                <a href="about-me.html">
+                                                    <img id="ContentPlaceHolder1_ctl00_Image1_0" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0 col-lg-12 mb-12" src="../b8b7e3e5497ca1a79901-d4e89b28631915e04edeadb9f99195f5.ssl.cf2.rackcdn.com/News/184996Etche%20America%20Foundation%20at%20NDDC.jpg" alt="Etche America Foundation at SEDC" style="max-height: 270px; width: 100%; object-fit: cover;" />
+                                                </a>
+                                            </span>
+                                            <span class="thumb-info-caption">
+                                                <span class="thumb-info-caption-text">
+                                                    <p class="text-color-primary text-2 mb-1"><span id="ContentPlaceHolder1_ctl00_Label5_0">12/3/2020</span></p>
+                                                    <h4 class="font-weight-bold mb-2"><a href='newsdetails036c.html?nid=38' class="text-decoration-none"><span id="ContentPlaceHolder1_ctl00_Label3_0">SEDC Commends Plans for Skill Acquisition Centre i...</span></a></h4>
+                                                    <p><span id="ContentPlaceHolder1_ctl00_Label1_0">L-R: The SEDC Acting Executive Director, Finance and Administration, Mr. Effiong Akwa, the SEDC Acting Managing Director, Professor Kemebradikumo Pond...</span></p>
+                                                    <a href='newsdetails036c.html?nid=38' class="read-more text-color-dark font-weight-bold text-2">read more <i class="fas fa-chevron-right text-1 ml-1"></i></a>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <span class="thumb-info thumb-info-hide-wrapper-bg">
+                                            <span class="thumb-info-wrapper">
+                                                <a href='newsdetailsddf1.html?nid=35'>
+                                                    <img id="ContentPlaceHolder1_ctl00_Image1_1" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0 col-lg-12 mb-12" src="../b8b7e3e5497ca1a79901-d4e89b28631915e04edeadb9f99195f5.ssl.cf2.rackcdn.com/News/560842Inauguration%20of%20IFAD%20Committee.jpg" alt="Inauguration of IFAD Committee by SEDC" style="max-height: 270px; width: 100%; object-fit: cover;" />
+                                                </a>
+                                            </span>
+                                            <span class="thumb-info-caption">
+                                                <span class="thumb-info-caption-text">
+                                                    <p class="text-color-primary text-2 mb-1"><<span id="ContentPlaceHolder1_ctl00_Label5_1">12/3/2020</span></p>
+                                                    <h4 class="font-weight-bold mb-2"><a href='newsdetailsddf1.html?nid=35' class="text-decoration-none"><span id="ContentPlaceHolder1_ctl00_Label3_1">SEDC Inaugurates Technical Committee for IFAD Agri...</span></a></h4>
+                                                    <p><span id="ContentPlaceHolder1_ctl00_Label1_1">L-R: The National Project Coordinator for LIFE-ND programme, Engr. Abiodun Sanni; the SEDC Acting Managing Director, Prof. Kemebradikumo Pondei, the D...</span></p>
+                                                    <a href='newsdetailsddf1.html?nid=35' class="read-more text-color-dark font-weight-bold text-2">read more <i class="fas fa-chevron-right text-1 ml-1"></i></a>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <span class="thumb-info thumb-info-hide-wrapper-bg">
+                                            <span class="thumb-info-wrapper">
+                                                <a href='newsdetails9648.html?nid=36'>
+                                                    <img id="ContentPlaceHolder1_ctl00_Image1_2" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0 col-lg-12 mb-12" src="../b8b7e3e5497ca1a79901-d4e89b28631915e04edeadb9f99195f5.ssl.cf2.rackcdn.com/News/660308nddc-relief-materials094.jpg" alt="COVID-19 Relief Materials Distributed by SEDC" style="max-height: 270px; width: 100%; object-fit: cover;" />
+                                                </a>
+                                            </span>
+                                            <span class="thumb-info-caption">
+                                                <span class="thumb-info-caption-text">
+                                                    <p class="text-color-primary text-2 mb-1"><span id="ContentPlaceHolder1_ctl00_Label5_2">12/3/2020</span></p>
+                                                    <h4 class="font-weight-bold mb-2"><a href='newsdetails9648.html?nid=36' class="text-decoration-none"><span id="ContentPlaceHolder1_ctl00_Label3_2">COVID-19: SEDC Distributes Medical and Relief Mate...</span></a></h4>
+                                                    <p><span id="ContentPlaceHolder1_ctl00_Label1_2">As parts of efforts to combat the ravaging Corona Virus pandemic and its attendant hunger, the South East Development Commission, SEDC, has kicked off...</span></p>
+                                                    <a href='newsdetails9648.html?nid=36' class="read-more text-color-dark font-weight-bold text-2">read more <i class="fas fa-chevron-right text-1 ml-1"></i></a>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 order-1 order-md-2 text-center text-md-right mt-4 mt-md-0">
+                                <h2 class="font-weight-normal text-6 mb-2 pb-1">Latest <strong class="font-weight-extra-bold">News</strong></h2>
+                                <p class="lead">Stay Informed with the latest news and updates from the South East Development Commission.</p>
+                                <a href="https://pmis.nddctenders-ng.com/news" class="font-weight-semibold text-decoration-none learn-more text-2">View All News <i class="fas fa-chevron-right ml-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer id="footer" class="mt-0">
+                <div class="container">
+                    <div class="row py-5 my-4">
+                        <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+                            <h5 class="text-3 mb-3">Social Media</h5>
+                            <ul class="list list-icons list-icons-sm">
+                                <li><i class="fab fa-facebook-f top-6"></i> <a href="https://www.facebook.com/NDDC" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                                <li><i class="fab fa-twitter top-6"></i> <a href="https://www.twitter.com/NDDC" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+                            <h5 class="text-3 mb-3">Quick Links</h5>
+                            <ul class="list list-icons list-icons-sm">
+                                <li><i class="fas fa-angle-right"></i> <a href="index.html">Home</a></li>
+                                <li><i class="fas fa-angle-right"></i> <a href="mission.html">Who We Are</a></li>
+                                <li><i class="fas fa-angle-right"></i> <a href="procedure.html">Tenders</a></li>
+                                <li><i class="fas fa-angle-right"></i> <a href="confirmation.html">Confirmation</a></li>
+                                <li><i class="fas fa-angle-right"></i> <a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+                            <h5 class="text-3 mb-3">Contact Details</h5>
+                            <ul class="list list-icons list-icons-sm">
+                                <li><i class="fas fa-envelope top-6"></i> <a href="mailto:info@nddctenders-ng.com">info@nddctenders-ng.com</a></li>
+                                <li><i class="fas fa-phone top-6"></i> <a href="tel:+2348191941731">+2348191941731</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <h5 class="text-3 mb-3">SEDC</h5>
+                            <p class="mb-0">The South East Development Commission is a federal government agency established by the Nigerian government in 2024 with the sole mandate of developing the South East region of Nigeria.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <div class="container py-2">
+                        <div class="row py-4">
+                            <div class="col text-center">
+                                <p><span id="ContentPlaceHolder1_Label6">Copyright © South East Development Commission</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- Vendor -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/jquery.appear/jquery.appear.min.js"></script>
+        <script src="vendor/jquery.easing/jquery.easing.min.js"></script>
+        <script src="vendor/jquery.cookie/jquery.cookie.min.js"></script>
+        <script src="vendor/popper/umd/popper.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="vendor/common/common.min.js"></script>
+        <script src="vendor/jquery.validation/jquery.validate.min.js"></script>
+        <script src="vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
+        <script src="vendor/jquery.gmap/jquery.gmap.min.js"></script>
+        <script src="vendor/jquery.lazyload/jquery.lazyload.min.js"></script>
+        <script src="vendor/isotope/jquery.isotope.min.js"></script>
+        <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
+        <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+        <script src="vendor/vide/jquery.vide.min.js"></script>
+        <script src="vendor/vivus/vivus.min.js"></script>
+
+        <!-- Theme Base, Components and Settings -->
+        <script src="js/theme.js"></script>
+
+        <!-- Current Page Vendor and Views -->
+        <script src="vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+        <script src="vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+        <!-- Theme Custom -->
+        <script src="js/custom.js"></script>
+
+        <!-- Theme Initialization Files -->
+        <script src="js/theme.init.js"></script>
+
+        <!-- Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42715764-5"></script>
+        <script type="text/javascript">
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-42715764-5');
+        </script>
+
+    </form>
+</body>
+</html>
